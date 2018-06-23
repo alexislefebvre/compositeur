@@ -2,9 +2,9 @@
 
 namespace Compositeur\Console;
 
-use Composer\Command\UpdateCommand as BaseUpdateCommand;
+use Composer\Command\ShowCommand as BaseShowCommand;
 
-class UpdateCommand extends BaseUpdateCommand
+class ShowCommand extends BaseShowCommand
 {
     protected function configure()
     {
@@ -12,7 +12,7 @@ class UpdateCommand extends BaseUpdateCommand
 
         // Override command name
         $this
-            ->setName('met-a-jour')
+            ->setName('spectacle')
         ;
     }
 }

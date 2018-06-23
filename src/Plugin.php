@@ -7,6 +7,8 @@ use Composer\IO\IOInterface;
 use Composer\Plugin\Capability\CommandProvider;
 use Composer\Plugin\Capable;
 use Composer\Plugin\PluginInterface;
+use Compositeur\Console\DiagnoseCommand;
+use Compositeur\Console\ShowCommand;
 use Compositeur\Console\UpdateCommand;
 
 class Plugin implements PluginInterface, Capable, CommandProvider
@@ -25,6 +27,8 @@ class Plugin implements PluginInterface, Capable, CommandProvider
     public function getCommands()
     {
         return [
+            new DiagnoseCommand(),
+            new ShowCommand(),
             new UpdateCommand(),
         ];
     }
