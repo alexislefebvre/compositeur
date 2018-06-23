@@ -5,7 +5,7 @@ A plugin that add French support to Composer
 ## Installation
 
 ```bash
-composer require --global alexislefebvre/compositeur:dev-master
+composer global require alexislefebvre/compositeur:dev-master
 ```
 
 ## Example of usage
