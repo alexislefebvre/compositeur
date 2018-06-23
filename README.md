@@ -10,7 +10,7 @@ Builds:
 ## Installation
 
 ```bash
-composer global require alexislefebvre/compositeur:dev-master
+composer global require alexislefebvre/compositeur:^0.0.1@alpha
 ```
 
 ## Example of usage
