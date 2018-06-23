@@ -1,0 +1,21 @@
+dist: trusty
+sudo: false
+
+language: php
+
+git:
+  depth: 5
+
+cache:
+  directories:
+    - $HOME/.composer/cache
+
+php:
+  - 7.1
+  - 7.2
+
+install:
+  - composer install --no-interaction --profile --no-progress
+
+script:
+  - php ./vendor/bin/phpunit $PHPUNIT_FLAGS
