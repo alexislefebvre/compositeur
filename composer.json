@@ -1,6 +1,8 @@
 {
   "name": "alexislefebvre/compositeur",
   "type": "composer-plugin",
+  "license" : "MIT",
+  "version": "dev-master",
   "require": {
     "php": "^7.0",
     "composer-plugin-api": "^1.1"

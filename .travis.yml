@@ -6,16 +6,17 @@ language: php
 git:
   depth: 5
 
-cache:
-  directories:
-    - $HOME/.composer/cache
-
 php:
   - 7.1
   - 7.2
 
 install:
-  - composer install --no-interaction --profile --no-progress
+  - mkdir -p /tmp/test
+  - cp -rv ./test/* /tmp/test/
+  - cd /tmp/test
+  - composer install
 
 script:
-  - php ./vendor/bin/phpunit $PHPUNIT_FLAGS
+  - ./test.sh docteur 1 "Composer version:"
+  - ./test.sh spectacle 0 "alexislefebvre/compositeur"
+  - ./test.sh met-a-jour 0 "Writing lock file"
