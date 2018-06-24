@@ -19,4 +19,4 @@ install:
 script:
   - ./test.sh docteur 1 "Composer version:"
   - ./test.sh spectacle 0 "alexislefebvre/compositeur"
-  - ./test.sh met-a-jour 0 "Writing lock file"
+  - ./test.sh met-a-jour 0 "Generating autoload files"
