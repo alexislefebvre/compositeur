@@ -1,23 +1,28 @@
 #!/bin/bash
 
+GREEN='\033[0;32m'
+RED='\033[0;31m'
+NC='\033[0m' # No Color
+
 command=$1
 expected_return_code=$2
 expected_text=$3
 
-command="composer $command"
-text=$(eval command)
+composer="composer $command"
+text=`$composer`
 return_code=$?
 
 if [ "$expected_return_code" != "$return_code" ]
 then
-    echo "Return code “$return_code” is different from expected ”$expected_return_code”"
+    echo -e "${RED}Error: Return code “$return_code” is different from expected ”$expected_return_code”${NC}"
     exit 1
 fi
 
-if grep -v -q "$expected_text" "$text"
+if ! echo "$text" | grep -q "$expected_text"
 then
-    echo "Text “$expected_text” not found in ”$text”"
+    echo -e "${RED}Error: Text “$expected_text” not found in ”$text”${NC}"
     exit 1
 fi
 
+echo -e "${GREEN}✔${NC}"
 exit 0
