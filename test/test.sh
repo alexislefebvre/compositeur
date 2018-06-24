@@ -9,7 +9,7 @@ expected_return_code=$2
 expected_text=$3
 
 composer="composer $command"
-text=`$composer`
+text=$(eval $composer 2>&1)
 return_code=$?
 
 if [ "$expected_return_code" != "$return_code" ]
