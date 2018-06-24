@@ -15,6 +15,8 @@ return_code=$?
 if [ "$expected_return_code" != "$return_code" ]
 then
     echo -e "${RED}Error: Return code “$return_code” is different from expected ”$expected_return_code”${NC}"
+    echo "Output:"
+    echo "$text"
     exit 1
 fi
 
