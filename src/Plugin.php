@@ -8,6 +8,7 @@ use Composer\Plugin\Capability\CommandProvider;
 use Composer\Plugin\Capable;
 use Composer\Plugin\PluginInterface;
 use Compositeur\Console\DiagnoseCommand;
+use Compositeur\Console\ExecCommand;
 use Compositeur\Console\ShowCommand;
 use Compositeur\Console\UpdateCommand;
 
@@ -28,6 +29,7 @@ class Plugin implements PluginInterface, Capable, CommandProvider
     {
         return [
             new DiagnoseCommand(),
+            new ExecCommand(),
             new ShowCommand(),
             new UpdateCommand(),
         ];
