@@ -1,13 +1,14 @@
 {
   "name": "alexislefebvre/compositeur",
   "type": "composer-plugin",
+  "license" : "MIT",
+  "version": "dev-master",
   "require": {
     "php": "^7.0",
     "composer-plugin-api": "^1.1"
   },
   "require-dev": {
-    "composer/composer": "^1.0",
-    "phpunit/phpunit": "^7.2"
+    "composer/composer": "^1.6.5"
   },
   "extra": {
     "class": "Compositeur\\Plugin"

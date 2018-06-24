@@ -1,0 +1,12 @@
+{
+    "license" : "MIT",
+    "require": {
+        "alexislefebvre/compositeur": "dev-master"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "/home/travis/build/alexislefebvre/compositeur"
+        }
+    ]
+}
