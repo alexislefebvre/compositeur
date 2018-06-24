@@ -23,7 +23,7 @@ install:
   - composer install
 
 script:
-  - ./test.sh guillotine 0 "Available binaries:"
-  - ./test.sh docteur 1 "Composer version:"
+  - ./test.sh "guillotine --list" 1 "No binaries found in composer.json or in bin-dir"
+  - ./test.sh docteur 0 "Checking composer.json"
   - ./test.sh spectacle 0 "alexislefebvre/compositeur"
   - ./test.sh met-a-jour 0 "Generating autoload files"
