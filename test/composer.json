@@ -1,7 +1,7 @@
 {
     "license" : "MIT",
     "require": {
-        "alexislefebvre/compositeur": "dev-master"
+        "alexislefebvre/compositeur": "0.x-dev"
     },
     "repositories": [
         {
