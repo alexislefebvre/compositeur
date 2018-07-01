@@ -25,5 +25,6 @@ install:
 script:
   - ./test.sh "guillotine --list" 1 "No binaries found in composer.json or in bin-dir"
   - ./test.sh docteur 0 "Checking composer.json"
+  - ./test.sh "exige php" 0 "Nothing to install or update"
   - ./test.sh spectacle 0 "alexislefebvre/compositeur"
   - ./test.sh met-a-jour 0 "Generating autoload files"
