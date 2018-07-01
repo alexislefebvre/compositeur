@@ -25,6 +25,7 @@ composer met-a-jour
 | ---------- | ------------ |
 | `exec`     | `guillotine` |
 | `diagnose` | `docteur`    |
+| `require`  | `exige`      |
 | `show`     | `spectacle`  |
 | `update`   | `met-a-jour` |
 
