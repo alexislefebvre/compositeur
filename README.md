@@ -21,13 +21,14 @@ composer met-a-jour
 
 ## Commands
 
-| Composer   | Compositeur  |
-| ---------- | ------------ |
-| `exec`     | `guillotine` |
-| `diagnose` | `docteur`    |
-| `require`  | `exige`      |
-| `show`     | `spectacle`  |
-| `update`   | `met-a-jour` |
+| Composer    | Compositeur  |
+| ----------- | ------------ |
+| `diagnose`  | `docteur`    |
+| `exec`      | `guillotine` |
+| `prohibits` | `censure`    |
+| `require`   | `exige`      |
+| `show`      | `spectacle`  |
+| `update`    | `met-a-jour` |
 
 [Packagist]: https://packagist.org/packages/alexislefebvre/compositeur
 [Packagist Stable Image]: https://poser.pugx.org/alexislefebvre/compositeur/v/stable.svg
