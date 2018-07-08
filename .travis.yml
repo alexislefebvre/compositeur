@@ -23,9 +23,4 @@ install:
   - composer install
 
 script:
-  - ./test.sh docteur 0 "Checking composer.json"
-  - ./test.sh "guillotine --list" 1 "No binaries found in composer.json or in bin-dir"
-  - ./test.sh "censure php" 0 "Package \"php\" listed for update is not installed. Ignoring."
-  - ./test.sh "exige php" 0 "Nothing to install or update"
-  - ./test.sh spectacle 0 "alexislefebvre/compositeur"
-  - ./test.sh met-a-jour 0 "Generating autoload files"
+  - python ./tests.py
