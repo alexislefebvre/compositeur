@@ -20,6 +20,7 @@ install:
   - mkdir -p /tmp/test
   - cp -rv ./test/* /tmp/test/
   - cd /tmp/test
+  - composer self-update --1
   - composer install
 
 script:
